@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker create \
+    --name tor \
+    --restart=always \
+    -p 53:53/udp \
+    -p 9050:9050 \
+    reekoheek/tor
