@@ -2,7 +2,9 @@
 
 docker create \
     --name tor \
-    --restart=always \
-    -p 53:53/udp \
-    -p 9050:9050 \
+    --restart always \
+    --net host \
     reekoheek/tor
+
+# -p 53:53/udp
+# -p 9050:9050
