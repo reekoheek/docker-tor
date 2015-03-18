@@ -1,0 +1,13 @@
+{
+    "name": "reekoheek/tor",
+    "docker": {
+        "containers": {
+            "root": {
+                "ports": [
+                    "53:53/udp",
+                    "9050:9050"
+                ]
+            }
+        }
+    }
+}
